@@ -11,17 +11,17 @@ interface StatsCardProps {
 
 export const StatsCard: React.FC<StatsCardProps> = ({ title, value, change, color }) => {
   const colorClasses = {
-    blue: 'from-blue-50 to-cyan-50 text-blue-700 border-blue-200/50',
-    green: 'from-green-50 to-emerald-50 text-green-700 border-green-200/50',
-    purple: 'from-purple-50 to-violet-50 text-purple-700 border-purple-200/50',
-    orange: 'from-orange-50 to-red-50 text-orange-700 border-orange-200/50',
+    blue: 'from-red-50 to-rose-50 text-red-700 border-red-200/50',
+    green: 'from-rose-50 to-pink-50 text-rose-700 border-rose-200/50',
+    purple: 'from-pink-50 to-red-50 text-pink-700 border-pink-200/50',
+    orange: 'from-red-50 to-rose-50 text-red-700 border-red-200/50',
   };
 
   const gradientClasses = {
-    blue: 'from-blue-500 to-cyan-500',
-    green: 'from-green-500 to-emerald-500',
-    purple: 'from-purple-500 to-violet-500',
-    orange: 'from-orange-500 to-red-500',
+    blue: 'from-red-500 to-rose-500',
+    green: 'from-rose-500 to-pink-500',
+    purple: 'from-pink-500 to-red-500',
+    orange: 'from-red-600 to-rose-600',
   };
 
   const icons = {
@@ -47,7 +47,7 @@ export const StatsCard: React.FC<StatsCardProps> = ({ title, value, change, colo
             <span className={`text-sm font-bold px-3 py-1.5 rounded-full flex items-center space-x-1 ${
               isPositive 
                 ? 'bg-gradient-to-r from-green-100 to-emerald-100 text-green-700 border border-green-200/50' 
-                : 'bg-gradient-to-r from-red-100 to-pink-100 text-red-700 border border-red-200/50'
+                : 'bg-gradient-to-r from-red-100 to-rose-100 text-red-700 border border-red-200/50'
             } shadow-premium-sm`}>
               {isPositive ? (
                 <TrendingUp className="w-3 h-3" />
@@ -60,7 +60,7 @@ export const StatsCard: React.FC<StatsCardProps> = ({ title, value, change, colo
         </div>
         <div>
           <p className="text-sm font-semibold opacity-80 mb-2">{title}</p>
-          <p className="text-3xl font-bold bg-gradient-to-r from-slate-800 to-slate-600 bg-clip-text text-transparent">
+          <p className="text-3xl font-bold bg-gradient-to-r from-slate-800 to-slate-600 bg-clip-text text-transparent font-poppins">
             {value}
           </p>
         </div>
@@ -68,3 +68,4 @@ export const StatsCard: React.FC<StatsCardProps> = ({ title, value, change, colo
     </div>
   );
 };
+
