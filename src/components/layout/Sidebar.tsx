@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { useNavigate, useLocation } from 'react-router-dom';
 import { 
@@ -105,7 +104,7 @@ export const Sidebar: React.FC<SidebarProps> = ({ isOpen, onToggle }) => {
             </div>
             <div>
               <h1 className="text-2xl font-bold bg-gradient-to-r from-red-600 via-rose-600 to-pink-600 bg-clip-text text-transparent font-poppins">
-                Robotum
+                Hilal
               </h1>
               <p className="text-xs text-slate-500 font-medium">Education Platform</p>
             </div>
@@ -182,4 +181,3 @@ export const Sidebar: React.FC<SidebarProps> = ({ isOpen, onToggle }) => {
     </div>
   );
 };
-

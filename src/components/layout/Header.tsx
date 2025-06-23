@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Search, Bell, User, Menu } from 'lucide-react';
 
@@ -19,7 +18,7 @@ export const Header: React.FC<HeaderProps> = ({ onToggleSidebar }) => {
           </button>
           <div>
             <h2 className="text-3xl font-bold bg-gradient-to-r from-red-600 via-rose-600 to-pink-600 bg-clip-text text-transparent font-poppins">
-              Welcome Back
+              Welcome to Hilal
             </h2>
             <p className="text-slate-600 mt-1 font-medium">Manage your institution with elegance</p>
           </div>
@@ -58,4 +57,3 @@ export const Header: React.FC<HeaderProps> = ({ onToggleSidebar }) => {
     </header>
   );
 };
-
